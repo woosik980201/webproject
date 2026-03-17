@@ -1,0 +1,1 @@
+  alert("alert outer js, javascript");
