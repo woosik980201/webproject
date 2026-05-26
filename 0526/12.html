@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다크모드</title>
+
+    <script>
+        function darkMode() {
+
+            // body 배경색 변경
+            document.body.style.backgroundColor = "black";
+
+            // body 전체 글자색 변경
+            document.body.style.color = "white";
+
+            // h1 배경색 변경
+            document.querySelector("h1").style.backgroundColor = "yellow";
+
+            // h1 글자색 변경
+            document.querySelector("h1").style.color = "black";
+        }
+    </script>
+</head>
+
+<body onload="darkMode()">
+
+    <h1>다크모드 만들기</h1>
+
+    <h2>1. 배경색: 검은색</h2>
+    <h2>2. 글자색: 흰색</h2>
+    <h2>3. 글자의 배경색: 원래 글자 배경색의 보색</h2>
+
+</body>
+</html>
