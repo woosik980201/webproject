@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery library 설정-->
+    <script src="https://code.jquery.com/jquery-4.0.0.js"></script>
+    <!-- jquery 문법으로 코드 작성-->
+    <script>
+   $(document).ready(
+    function(){
+        let srcPath = $("#image1").attr("src");
+        $("#h2").text(srcPath);
+        $("#h2").css("color","white");
+        $("#h2").css("background","black");
+        $("#h2").css("Width","200px");
+    }
+   )
+    </script>
+</head>
+<body>
+    <img src="imgs/image1.jpg" width="400" id="image1"><br><br>
+    <h2 id="h2"></h2>
+</body>
+</html>
