@@ -11,32 +11,31 @@
     <script>
    $(document).ready(
     function(){
-     $("#box").css({
+   $("body").css("background","black");
+     
+   $("#box").css({
           width : "100px",
           height : "100px",
           background : "orange"   
-     }
-    ).on({
-      click : function(){
-        $(this).css("background","red");
-      },
-      mouseenter : function(){
-        $(this).css("background","blue");
-      },
-      mouseleave : function(){
-        $(this).css("background","orange");
-      }, 
-    });
-    $("a").on("click", function(event){
-      alert("링크가 클릭되었습니다.");
-  event.preventDefault();
-    });
+    
+  }
+      );
+      $("#box").animate({
+          width : "300px",
+          opacity : "0.2",
+      },2000   
+   );
+
+      ("#box").animate({
+          width : "100px",
+          opacity : "1.0",
+      },2000   
+      );
     }
-  );
+  );    
     </script>
 </head>
 <body>
 <div id="box"></div>
-<a href="https://www.naver.com">Naver Homepage</a>
 </body>
 </html>
