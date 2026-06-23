@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+        let appendH1 = function(){
+            for(let i=0; i<20; i++){
+                $("<h1>Created H1 Element</h1>").appendTo("body");
+            }
+        }
+            appendH1();
+            $(window).scroll(function () { 
+ 
+let scrollHeight = $(window).scrollTop() + $(window).height(); 
+let documentHeight = $(document).height(); 
+
+
+if (scrollHeight +10 >= documentHeight) { 
+appendH1(); 
+} 
+}); 
+}); 
+</script>
+</head>
+
+<body>
+</body>
+</html>
