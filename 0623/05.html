@@ -11,29 +11,24 @@
     <script>
    $(document).ready(
     function(){
-   $("body").css("background","black");
-     
-   $("#box").css({
-          width : "100px",
-          height : "100px",
-          background : "orange", 
-  
-  }
-      ).animate({
-          width : "300px",
-          opacity : "0.2",
-      },2000   
-   ).animate({
-          width : "-=200px",
-          opacity : "1.0",
-          
-      },2000   
-      );
+  for(let i=0; i<10;i++){
+    let hElement = $(<h1>Created H1 Element Object + " + i + "</h1>);
+    hElement.css({
+      backgroundcolor : "orange",
+      color : "white",
+    });
+  $("body").append(hElement);
+   hElement.dblclick(
+    function(){
+      $(this).remove();
     }
-  );    
+   )           
+  }
+            } 
+        );
     </script>
 </head>
 <body>
-<div id="box"></div>
+
 </body>
 </html>
